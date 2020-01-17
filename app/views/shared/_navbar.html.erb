@@ -13,18 +13,20 @@
       <li class="nav-item active">
         <%= link_to "Accueil", "#", class: "nav-link" %>
       </li>
+      <li class="nav-item dropdown">
+        <%= link_to "Notre offre", "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Consommateur", "#", class: "dropdown-item" %>
+          <%= link_to "Industriel", "#", class: "dropdown-item" %>
+          <%= link_to "Restaurateur", "#", class: "dropdown-item" %>
+          <%= link_to "Distributeur", "#", class: "dropdown-item" %>
+        </div>
+      </li>
       <li class="nav-item">
         <%= link_to "Le Blog", "#", class: "nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "L'équipe", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item dropdown">
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Action", "#", class: "dropdown-item" %>
-          <%= link_to "Another action", "#", class: "dropdown-item" %>
-        </div>
       </li>
     </ul>
   </div>
