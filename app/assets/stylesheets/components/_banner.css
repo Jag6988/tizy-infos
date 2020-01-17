@@ -1,0 +1,75 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .9;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.gap-landing{
+  height:15vh;
+}
+
+.white-background{
+  background: rgba(255,255,255,0.3);
+  border-radius: 0.5em;
+}
+
+.download{
+  width: 60vh;
+  margin: 0 auto ;
+  margin-top: 5vw;
+  overflow: hidden;
+
+}
+
+  .download-android{
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  border-radius: 0.5em;
+  color:white;
+  margin-right: 10vh;
+  margin-bottom:5vh;
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+  }
+
+.icon-download{
+  width: 5vh;
+  margin:1vh;
+
+}
+
+.flexing{
+  display: flex;
+
+}
+
+.download-head{
+  font-size: 2vh;
+}
+
+.download-android:hover{
+  background-color: rgba(44, 150, 121, 1)
+}
+.smartphone{
+  height: 45vh;
+  width:20vw;
+  position: absolute;
+  top: 27vh;
+  left:-4vw;
+}
