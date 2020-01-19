@@ -6,10 +6,21 @@
   overflow: hidden;
 }
 
+.gradient-top{
+  height:5vh;
+  width:100vw;
+  background: linear-gradient(rgba(255,255,255,1), rgba(230,230,230,1));
+}
+.gradient-bottom{
+  height:5vh;
+  width:100vw;
+  background: linear-gradient( rgba(230,230,230,1), rgba(255,255,255,1));
+}
+
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   font-size: 32px;
   font-weight: bold;
 }
@@ -18,15 +29,15 @@
   font-size: 20px;
   color: white;
   opacity: .9;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 .gap-landing{
-  height:15vh;
+  height:10vh;
 }
 
 .white-background{
-  background: rgba(255,255,255,0.3);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 0.5em;
 }
 
@@ -45,7 +56,7 @@
   color:white;
   margin-right: 10vh;
   margin-bottom:5vh;
-  box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
   }
 
 .icon-download{
@@ -67,9 +78,10 @@
   background-color: rgba(44, 150, 121, 1)
 }
 .smartphone{
-  height: 45vh;
-  width:20vw;
+  height: 43vh;
+  width:38vh;
   position: absolute;
-  top: 27vh;
+  top: 28vh;
   left:-4vw;
+  overflow:hidden;
 }
