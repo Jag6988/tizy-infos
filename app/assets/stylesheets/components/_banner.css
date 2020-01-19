@@ -5,7 +5,59 @@
   height: 50vh;
   overflow: hidden;
 }
+.tizy-message{
+  height:51vh;
+  position:relative;
+  top:-15.3vh;
 
+  background-color: rgba(255,255,255,0.4);
+}
+.right-comment{
+  width:60%;
+  background-color: rgba(18, 147, 117, 0.6);
+  border-radius: 2em;
+  padding:2vh;
+  position:relative;
+  left:3vw;
+
+}
+.tizy-think{
+  display:flex;
+  position:relative;
+  top:40vh;
+}
+.white{
+
+  margin:-0.5vh;
+  position:relative;
+}
+.circle-small{
+  width:2.5vh;
+  height: 2.5vh;
+  border-radius: 50%;
+  top:1.5vh;
+  left:0.5vw;
+  background-color: rgba(158, 63, 39, 1);
+
+}
+.circle-medium{
+  width:5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top:-2vh;
+  left:0.5vw;
+  background-color: rgba(216, 97, 25, 1);
+
+}
+.circle-large{
+  width:7.5vh;
+  height: 7.5vh;
+  border-radius: 50%;
+  top:-7vh;
+  left:0vw;
+  background-color: rgba(18, 147, 117, 1);
+
+}
 .gradient-top{
   height:5vh;
   width:100vw;
@@ -37,8 +89,41 @@
 }
 
 .white-background{
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.black-background{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.box-header-banner {
   border-radius: 0.5em;
+  padding:5vh;
+}
+.middle{
+  vertical-align: middle;
+}
+
+.right-position {
+  width: 40vw;
+  position: absolute;
+  left:50vw;
+  top:15vh;
+}
+.tizy-banner{
+  width:5vw;
+  filter: drop-shadow(5px 0px 2px rgba(255, 255, 255, 0.8));
+}
+
+.left-position {
+  width: 40vw;
+  position: absolute;
+  right:50vw;
+  top:15vh;
+}
+
+.center-position {
+  width: 40vw;
 }
 
 .download{
