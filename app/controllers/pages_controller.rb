@@ -11,4 +11,7 @@ class PagesController < ApplicationController
   end
   def consommateur
   end
+  def blog
+
+  end
 end

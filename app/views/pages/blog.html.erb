@@ -1,0 +1,47 @@
+
+  <div class = "gradient-top"><p>.</p><div>
+<div class="banner" style="background-size: cover; background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)), url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);">
+  <div class="container box-header-banner black-background right-position">
+    <h1 >Tizy vous propose des <strong>articles</strong> en lien avec notre projet d'accélérer <strong> la tranisition écologique.</strong></h1>
+    <!-- <p>Nous permettons de <strong> mesurer et promouvoir</strong> votre menu à vos clients.</p> -->
+    <a class="btn btn-danger" href="#">Proposer un article</a>
+  </div>
+</div>
+<div class = "gradient-bottom"><p>.</p><div>
+
+
+<div class = "container">
+  <%@articles.each do |art| %>
+     <div class = "box white-back">
+      <div class="card-product">
+        <img src= <%= art.picture %>>
+        <div class="card-product-infos">
+          <h2><%=art.title%></h2>
+          <p><%= art.resume%></p>
+        </div>
+      </div>
+    </div>
+  <%end%>
+
+
+
+
+
+    <h1>Comment ca marche ?</h1>
+    <ul class="list-group">
+      <li class="list-group-item">Vos clients sont de plus en plus demandeurs de transparence.</li>
+      <li class="list-group-item">Vos clients ont besoin d'identifier comment consommer durablement dans votre restaurant.</li>
+      <li class="list-group-item">Vous souhaitez vous engager dans une transition écologique et identifier vos leviers d'action.</li>
+      <li class="list-group-item">Vous souhaitez rendre visible votre engagement auprès de vos collaborateurs et clients.</li>
+    </ul>
+  </div>
+  <div class = "box grey-back">
+    <p>Mais encore</p>
+  </div>
+  <div class = "box white-back">
+    <p>On est toujours là</p>
+  </div>
+  <div class = "box grey-back">
+    <p>Encore là </p>
+  </div>
+</div>
