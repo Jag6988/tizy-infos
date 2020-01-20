@@ -1,11 +1,32 @@
+
 .banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  height: 50vh;
   overflow: hidden;
-  margin-top: 2vh;
+  margin-top: 5vh;
+  height: 55vh;
 }
+
+.banner-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50vw;
+  height: 40vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 .tizy-message{
   height:51vh;
   position:relative;
@@ -74,15 +95,20 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  font-size: 32px;
+  font-size: 3.8vw;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 1.8vw;
   color: white;
   opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.banner a {
+  height: 7vh;
+  font-size: 3vh;
 }
 
 .gap-landing{
@@ -106,10 +132,9 @@
 }
 
 .right-position {
-  width: 40vw;
+  width: 50vw;
   position: absolute;
   left:50vw;
-  top:15vh;
 }
 .tizy-banner{
   width:5vw;
@@ -128,11 +153,12 @@
 }
 
 .download{
-  width: 60vh;
   margin: 0 auto ;
-  margin-top: 5vw;
+  margin-top: 5vh;
   overflow: hidden;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   .download-android{
@@ -143,31 +169,61 @@
   margin-right: 10vh;
   margin-bottom:5vh;
   box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
+  padding: 4px;
   }
 
 .icon-download{
-  width: 5vh;
+  width: 5vw;
   margin:1vh;
 
 }
 
 .flexing{
   display: flex;
-
 }
 
 .download-head{
   font-size: 2vh;
 }
 
-.download-android:hover{
+.download-android:hover {
   background-color: rgba(44, 150, 121, 1)
 }
+
 .smartphone{
+  display: flex;
+  align-self: flex-end;
   height: 43vh;
   width:38vh;
   position: absolute;
-  top: 18vh;
   left:-4vw;
   overflow:hidden;
+}
+
+@media screen and (max-width:450px) {
+  .banner h1 {
+    font-size: 4.2vw;
+  }
+
+  .banner p {
+    font-size: 2.2vw;
+  }
+
+  .banner a {
+    height: 7vh;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .banner h1 {
+    font-size: 4.8vw;
+  }
+  .banner p {
+    font-size: 2.5vw;
+  }
+  .banner a {
+    height: 5vh;
+    font-size: 1.5vh;
+  }
 }
