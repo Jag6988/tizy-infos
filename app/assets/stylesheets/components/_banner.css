@@ -95,12 +95,12 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  font-size: 3.8vw;
+  font-size: 3.5vw;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   color: white;
   opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
@@ -153,38 +153,44 @@
 }
 
 .download{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 0 auto ;
   margin-top: 5vh;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 60vw;
 }
 
-  .download-android{
-  width: 100%;
+.download-android{
+  display: flex;
   background: rgba(0,0,0,0.8);
   border-radius: 0.5em;
   color:white;
-  margin-right: 10vh;
-  margin-bottom:5vh;
+  margin-top: 3vh;
+  margin-bottom:8vh;
   box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
   padding: 4px;
-  }
+  height: 11vh;
+}
+
 
 .icon-download{
-  width: 5vw;
+  height: 7vh;
   margin:1vh;
-
 }
 
 .flexing{
   display: flex;
 }
 
-.download-head{
+.disponible {
   font-size: 2vh;
 }
+.download-head{
+  font-size: 1.4vh;
+}
+
 
 .download-android:hover {
   background-color: rgba(44, 150, 121, 1)
@@ -212,6 +218,11 @@
   .banner a {
     height: 7vh;
     font-size: 3vh;
+  }
+
+  .download {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
