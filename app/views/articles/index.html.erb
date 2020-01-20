@@ -1,2 +1,33 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+  <div class = "gradient-top"><p>.</p><div>
+<div class="banner" style="background-size: cover; background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)), url(https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExNjMwfQ&auto=format&fit=crop&w=1350&q=80);">
+  <div class="container box-header-banner black-background right-position">
+    <h1 >Tizy vous propose des <strong>articles</strong> en lien avec <strong> la transition écologique.</strong></h1>
+    <br>
+    <!-- <p>Nous permettons de <strong> mesurer et promouvoir</strong> votre menu à vos clients.</p> -->
+    <a class="btn btn-danger" href="#">Proposer un article</a>
+  </div>
+</div>
+<div class = "gradient-bottom"><p>.</p><div>
+
+
+<div class = "container">
+  <% i = 0 %>
+  <%@articles.each do |art| %>
+    <%= link_to article_path(art)  do%>
+      <%if i.even? %>
+        <div class = "box white-back">
+      <%else%>
+        <div class = "box grey-back">
+      <%end%>
+        <div class="card-product">
+          <img src= <%= art.picture %>>
+          <div class="card-product-infos">
+            <h2><%=art.title%></h2>
+            <p><%= art.resume%></p>
+          </div>
+        </div>
+      </div>
+    <%end%>
+    <%i += 1%>
+  <%end%>
+</div>

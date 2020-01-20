@@ -1,2 +1,10 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class = "gradient-top"><p>.</p><div>
+<div class="banner" style="background-size: cover; background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)), url(<%=@article.picture%>);">
+</div>
+<div class = "gradient-bottom"><p>.</p><div>
+<div class = "container">
+  <h1 ><%=@article.title%></h1>
+  <h4><strong><%=@article.resume%></strong></h4>
+  <p><%=@article.content%></p>
+</div>
+
