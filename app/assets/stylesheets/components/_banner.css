@@ -1,240 +1,84 @@
-
-.banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  margin-top: 5vh;
+.banniere {
+  width: 100vw;
   height: 55vh;
+  background-size: cover;
+  margin: 25px 0 25px 0;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.banner-content {
-  position: relative;
+.titre-de-rubrique {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   flex-direction: column;
+  position: absolute;
+  right: 1vw;
+  height: 50vh;
   width: 50vw;
-  height: 40vh;
+  border-radius: 0.5em;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 32px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.tizy-message{
-  height:51vh;
-  position:relative;
-  top:-15.3vh;
-
-  background-color: rgba(255,255,255,0.4);
-}
-.right-comment{
-  width:60%;
-  background-color: rgba(18, 147, 117, 0.6);
-  border-radius: 2em;
-  padding:2vh;
-  position:relative;
-  left:3vw;
-
-}
-.tizy-think{
-  display:flex;
-  position:relative;
-  top:40vh;
-}
-.white{
-
-  margin:-0.5vh;
-  position:relative;
-}
-.circle-small{
-  width:2.5vh;
-  height: 2.5vh;
-  border-radius: 50%;
-  top:1.5vh;
-  left:0.5vw;
-  background-color: rgba(158, 63, 39, 1);
-
-}
-.circle-medium{
-  width:5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top:-2vh;
-  left:0.5vw;
-  background-color: rgba(216, 97, 25, 1);
-
-}
-.circle-large{
-  width:7.5vh;
-  height: 7.5vh;
-  border-radius: 50%;
-  top:-7vh;
-  left:0vw;
-  background-color: rgba(18, 147, 117, 1);
-
-}
-.gradient-top{
-  height:5vh;
-  width:100vw;
-  background: linear-gradient(rgba(255,255,255,1), rgba(230,230,230,1));
-}
-.gradient-bottom{
-  height:5vh;
-  width:100vw;
-  background: linear-gradient( rgba(230,230,230,1), rgba(255,255,255,1));
-}
-
-.banner h1 {
-  margin: 0;
+.titre-de-rubrique h1 {
+  font-weight: bolder;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  font-size: 3.5vw;
-  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
-
-.banner p {
-  font-size: 1.6vw;
+.titre-de-rubrique p {
+  font-size: 16px;
   color: white;
   opacity: .9;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6)
 }
 
-.banner a {
-  height: 7vh;
-  font-size: 3vh;
-}
-
-.gap-landing{
-  height:10vh;
-}
-
-.white-background{
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.black-background{
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.box-header-banner {
-  border-radius: 0.5em;
-  padding:5vh;
-}
-.middle{
-  vertical-align: middle;
-}
-
-.right-position {
-  width: 50vw;
-  position: absolute;
-  left:50vw;
-}
-.tizy-banner{
-  width:5vw;
-  filter: drop-shadow(5px 0px 2px rgba(255, 255, 255, 0.8));
-}
-
-.left-position {
-  width: 40vw;
-  position: absolute;
-  right:50vw;
-  top:15vh;
-}
-
-.center-position {
-  width: 40vw;
-}
-
-.download{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto ;
-  margin-top: 5vh;
-  overflow: hidden;
-  width: 60vw;
-}
-
-.download-android{
-  display: flex;
-  background: rgba(0,0,0,0.8);
-  border-radius: 0.5em;
-  color:white;
-  margin-top: 3vh;
-  margin-bottom:8vh;
-  box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
-  padding: 4px;
-  height: 11vh;
-}
-
-
-.icon-download{
-  height: 7vh;
-  margin:1vh;
-}
-
-.flexing{
-  display: flex;
-}
-
-.disponible {
-  font-size: 2vh;
-}
-.download-head{
-  font-size: 1.4vh;
-}
-
-
-.download-android:hover {
-  background-color: rgba(44, 150, 121, 1)
-}
-
-.smartphone{
-  display: flex;
+.smartphone {
+  height: 240px;
+  width: 184px;
   align-self: flex-end;
-  height: 43vh;
-  width:38vh;
   position: absolute;
-  left:-4vw;
-  overflow:hidden;
+  left: 0;
 }
 
-@media screen and (max-width:450px) {
-  .banner h1 {
-    font-size: 4.2vw;
-  }
-
-  .banner p {
-    font-size: 2.2vw;
-  }
-
-  .banner a {
-    height: 7vh;
-    font-size: 3vh;
-  }
-
-  .download {
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 22vh;
+  background-image: linear-gradient(#e9e9e9, #fff, #e9e9e9);
+}
+.icon-download {
+  height: 40px;
+}
+.download-android {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0.5em;
+  color: white;
+  margin: 12px 40px 12px 40px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  height: 62px;
+  width: 145px;
 }
 
-@media screen and (max-width:350px) {
-  .banner h1 {
-    font-size: 4.8vw;
-  }
-  .banner p {
-    font-size: 2.5vw;
-  }
-  .banner a {
-    height: 5vh;
-    font-size: 1.5vh;
-  }
+h3 {
+  font-size: 10px;
+}
+.download-android p {
+  font-size: 16px;
+}
+
+.download-txt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
