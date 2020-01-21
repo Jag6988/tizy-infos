@@ -1,4 +1,3 @@
-// banniere de la home >>>
 
 .banniere {
   width: 100%;
@@ -9,10 +8,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 
   .smartphone {
     height: 60vh;
-    width: 21vw;
+    width: 48vh;
     align-self: flex-end;
     position: absolute;
     left: 3vw;
@@ -32,7 +32,6 @@
     border-radius: 0.5em;
     background: rgba(255, 255, 255, 0.1);
     padding: 32px;
-
     h1 {
       font-weight: bolder;
       color: white;
@@ -40,7 +39,6 @@
       margin: 0;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
-
     p {
       font-size: 16px;
       color: white;
@@ -49,12 +47,10 @@
     }
   }
 }
-// fin
 
 
 
 
-// Boutons téléchargerment aux stores >>>
 
 .download {
   display: flex;
@@ -63,7 +59,6 @@
   width: 100%;
   height: 22vh;
   background-image: linear-gradient(#e9e9e9, #fff, #e9e9e9);
-
   .download-android {
     display: flex;
     align-items: center;
@@ -76,21 +71,17 @@
     padding: 4px;
     height: 62px;
     width: 145px;
-
     .icon-download {
       height: 40px;
     }
-
     .download-txt {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: space-evenly;
-
       h3 {
         font-size: 16px;
       }
-
       p {
       font-size: 10px;
       }
@@ -101,7 +92,66 @@
 .download-android:hover {
   background-color: #119c7d;
 }
-// fin
 
+@media screen and (max-width: 920px) {
+  .titre-home {
+    h1{
+      font-size: 24px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
 
+@media screen and (max-width: 790px) {
+  .banniere {
+    height: 100% !important;
+    flex-direction: column-reverse !important;
+    .titre-home {
+      right: auto;
+      position: inherit;
+      width: 75vw;
+      h1{
+        font-size: 28px !important;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .smartphone {
+      height: 48vh;
+      width: 37vh;
+      position: inherit !important;
+      align-self: center;
+      left: auto;
+    }
+  }
+}
 
+@media screen and (max-width: 400px) {
+  .titre-home {
+    h1{
+      font-size: 16px !important;
+    }
+    p {
+      font-size: 8px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .titre-home {
+    width: 98vw !important;
+    h1{
+      font-size: 12px !important;
+    }
+    p {
+      font-size: 8px !important;
+    }
+  }
+  .smartphone {
+    height: 38vh !important;
+    width: 27vh !important;
+  }
+}
