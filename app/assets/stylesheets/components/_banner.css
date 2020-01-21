@@ -69,6 +69,10 @@
   width: 145px;
 }
 
+.download-android:hover {
+  background-color: #119c7d;
+}
+
 h3 {
   font-size: 10px;
 }
