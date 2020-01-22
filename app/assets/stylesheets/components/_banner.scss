@@ -93,6 +93,16 @@
   background-color: #119c7d;
 }
 
+.box-head-picture{
+  width:5vh;
+  height:5vh;
+  margin-right:2.5vh;
+}
+.middle {
+  align-items: center;
+}
+
+// responsive!!!
 
 @media screen and (min-width: 1400px) {
   .banniere {
@@ -176,6 +186,7 @@
   }
 }
 
+
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
   .banniere {
     height: 100% !important;
@@ -200,4 +211,6 @@
     }
   }
 }
+
+
 
