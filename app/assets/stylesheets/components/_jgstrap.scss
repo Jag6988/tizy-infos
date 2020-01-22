@@ -112,3 +112,13 @@
 .no-display{
   display:none;
 }
+
+.gradient-top{
+  height: 10vh;
+  background: linear-gradient(rgba(254,254,254,1), rgba(240,240,240,1));
+  margin-bottom:1px;
+}
+.gradient-bottom{
+  height: 10vh;
+  background: linear-gradient( rgba(240,240,240,1), rgba(254,254,254,1));
+}
