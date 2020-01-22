@@ -11,7 +11,7 @@
   overflow: hidden;
 
   .smartphone {
-    height: 60vh;
+    width: 360px;
     align-self: flex-end;
     position: absolute;
     left: 3vw;
@@ -57,7 +57,7 @@
   width: 100%;
   height: 22vh;
   background-image: linear-gradient(#e9e9e9, #fff, #e9e9e9);
-  padding-bottom: 24px;
+  padding: 24px 0 24px 0;
   .download-android {
     display: flex;
     align-items: center;
@@ -113,10 +113,17 @@
         font-size: 2vh !important;
       }
     }
+    .smartphone {
+      width: 344px;
+    }
   }
-  .smartphone {
-    height: 58vh !important;
-    width: 47vh !important;
+}
+
+@media screen and (min-width: 2000px) {
+  .banniere {
+    .smartphone {
+      width: 20vw;
+    }
   }
 }
 
@@ -148,7 +155,6 @@
       }
     }
     .smartphone {
-      height: 48vh;
       width: 37vh;
       position: inherit !important;
       align-self: center;
@@ -216,7 +222,6 @@
     }
   }
   .smartphone {
-    height: 38vh !important;
     width: 27vh !important;
   }
   .download-android {
@@ -253,7 +258,6 @@
       }
     }
     .smartphone {
-      height: 48vh;
       width: 37vh;
       position: inherit !important;
       align-self: center;

@@ -1,6 +1,35 @@
 <div class = "conteneur"><div>
   <div class="banniere" style="background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)), url(https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
-    <%= image_tag "smartphone_produit.png", class: "smartphone" %>
+    <div id="carouselExampleIndicators" class="smartphone carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag "smartphone-general.png", class:  "d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "smartphone-packaging.png", class:  "d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "smartphone-origine.png", class:  "d-block w-100" %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "smartphone-co2.png", class:  "d-block w-100" %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     <div class="titre-home">
       <h1>Tizy suit <strong>la transition écologique</strong> de vos produits <strong>alimentaires</strong></h1>
       <p>Ensemble, facilitons la <strong> transition écologique</strong> de notre alimentation.</p>
