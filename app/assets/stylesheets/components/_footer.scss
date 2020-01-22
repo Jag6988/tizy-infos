@@ -1,11 +1,11 @@
 .footer {
-  background: rgba(49,49,49,0.7);
+  background: rgba(240,240,240,1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5vh;
   padding: 0px 50px;
-  color: white;
+  color: rgba(0,0,0,0.4);
   position: fixed;
   bottom:0;
   width:100vw;
@@ -18,7 +18,7 @@
   opacity: 0.7;
 }
 .footer-links a {
-  color: white;
+  color: rgba(0,0,0,0.4);
   opacity: 0.7;
   text-decoration: none;
   font-size: 24px;
