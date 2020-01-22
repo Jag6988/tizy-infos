@@ -68,10 +68,10 @@
     margin: 12px 40px 12px 40px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
     padding: 4px;
-    height: 62px;
-    width: 145px;
+    height: 120px;
+    width: 240px;
     .icon-download {
-      height: 40px;
+      height: 80px;
     }
     .download-txt {
       display: flex;
@@ -79,10 +79,10 @@
       flex-direction: column;
       justify-content: space-evenly;
       h3 {
-        font-size: 16px;
+        font-size: 26px;
       }
       p {
-      font-size: 10px;
+      font-size: 16px;
       }
     }
   }
@@ -141,6 +141,7 @@
       right: auto;
       position: inherit;
       width: 85vw;
+      text-align: center;
       h1{
         font-size: 28px !important;
       }
@@ -158,6 +159,28 @@
   }
 }
 
+@media screen and (max-width: 620px) {
+  .download {
+    flex-direction : column;
+    height: 100%;
+  }
+  .download-android {
+    height: 96px !important;
+    width: 204px !important;
+    .icon-download {
+      height: 72px !important;
+    }
+    .download-txt {
+      h3 {
+        font-size: 22px !important;
+      }
+      p {
+      font-size: 14px !important;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .titre-home {
     width: 98vw !important;
@@ -166,6 +189,21 @@
     }
     p {
       font-size: 8px !important;
+    }
+  }
+  .download-android {
+    height: 80px !important;
+    width: 188px !important;
+    .icon-download {
+      height: 64px !important;
+    }
+    .download-txt {
+      h3 {
+        font-size: 20px !important;
+      }
+      p {
+      font-size: 12px !important;
+      }
     }
   }
 }
@@ -182,6 +220,21 @@
   .smartphone {
     height: 38vh !important;
     width: 27vh !important;
+  }
+  .download-android {
+    height: 64px !important;
+    width: 140px !important;
+    .icon-download {
+      height: 48px !important;
+    }
+    .download-txt {
+      h3 {
+        font-size: 16px !important;
+      }
+      p {
+      font-size: 10px !important;
+      }
+    }
   }
 }
 
