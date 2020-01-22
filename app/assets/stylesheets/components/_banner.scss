@@ -93,6 +93,26 @@
   background-color: #119c7d;
 }
 
+
+@media screen and (min-width: 1400px) {
+  .banniere {
+    height: 60vh !important;
+    .titre-home {
+      width: 50vw !important;
+      h1{
+        font-size: 3vh !important;
+      }
+      p {
+        font-size: 1.5vh !important;
+      }
+    }
+  }
+  .smartphone {
+    height: 48vh !important;
+    width: 37vh !important;
+  }
+}
+
 @media screen and (max-width: 920px) {
   .titre-home {
     h1{
@@ -104,14 +124,14 @@
   }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 800px) {
   .banniere {
     height: 100% !important;
     flex-direction: column-reverse !important;
     .titre-home {
       right: auto;
       position: inherit;
-      width: 75vw;
+      width: 85vw;
       h1{
         font-size: 28px !important;
       }
@@ -131,6 +151,7 @@
 
 @media screen and (max-width: 400px) {
   .titre-home {
+    width: 98vw !important;
     h1{
       font-size: 16px !important;
     }
@@ -142,7 +163,6 @@
 
 @media screen and (max-width: 343px) {
   .titre-home {
-    width: 98vw !important;
     h1{
       font-size: 12px !important;
     }
@@ -155,3 +175,29 @@
     width: 27vh !important;
   }
 }
+
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+  .banniere {
+    height: 100% !important;
+    flex-direction: column-reverse !important;
+    .titre-home {
+      right: auto;
+      position: inherit;
+      width: 85vw;
+      h1{
+        font-size: 4vh !important;
+      }
+      p {
+        font-size: 2vh !important;
+      }
+    }
+    .smartphone {
+      height: 48vh;
+      width: 37vh;
+      position: inherit !important;
+      align-self: center;
+      left: auto;
+    }
+  }
+}
+
