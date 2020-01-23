@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.12'
+gem 'mail_form', '~> 1.8'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

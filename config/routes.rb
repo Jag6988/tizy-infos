@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   # get '/distributeur', to: 'pages#distributeur'
   # get '/consommateur', to: 'pages#consommateur'
   resources :articles, only: %i[new create update edit destroy index show]
+  resources :contacts, only: %i[new create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
