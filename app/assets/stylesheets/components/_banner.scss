@@ -12,7 +12,7 @@
 
 
   .smartphone {
-    width: 360px;
+    width: 40vh;
     align-self: flex-end;
     position: absolute;
     left: 3vw;
@@ -28,21 +28,25 @@
     right: 1vw;
     height: 50vh;
     width: 50vw;
+    text-align: center;
     border-radius: 0.5em;
     background: rgba(255, 255, 255, 0.1);
     padding: 32px;
     h1 {
       font-weight: bolder;
       color: white;
-      font-size: 32px;
+      font-size: 2.8vw;
       margin: 0;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
     p {
-      font-size: 16px;
+      font-size: 1.6vw;
       color: white;
       opacity: .9;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6)
+    }
+    .btn-danger {
+      font-size: 1.8vw;
     }
   }
 }
@@ -72,10 +76,10 @@
     margin: 12px 40px 12px 40px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
     padding: 4px;
-    height: 120px;
-    width: 240px;
+    height: 8vw;
+    width: 15vw;
     .icon-download {
-      height: 80px;
+      height: 6vw;
     }
     .download-txt {
       display: flex;
@@ -83,10 +87,10 @@
       flex-direction: column;
       justify-content: space-evenly;
       h3 {
-        font-size: 26px;
+        font-size: 1.6vw;
       }
       p {
-      font-size: 16px;
+      font-size: 1.25vw;
       }
     }
   }
@@ -96,55 +100,11 @@
   background-color: #119c7d;
 }
 
-.box-head-picture{
-  width:5vh;
-  height:5vh;
-  margin-right:2.5vh;
-}
-.middle {
-  align-items: center;
-}
-
 // responsive!!!
 
-@media screen and (min-width: 1400px) {
+@media only screen and (max-width: 1024px) {
   .banniere {
-    .titre-home {
-      h1{
-        font-size: 4vh !important;
-      }
-      p {
-        font-size: 2vh !important;
-      }
-    }
-    .smartphone {
-      width: 376px;
-    }
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .banniere {
-    .smartphone {
-      width: 20vw;
-    }
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .titre-home {
-    h1{
-      font-size: 24px !important;
-    }
-    p {
-      font-size: 16px !important;
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .banniere {
-    height: 100% !important;
+    height: auto !important;
     flex-direction: column-reverse !important;
     .titre-home {
       right: auto;
@@ -152,123 +112,28 @@
       width: 85vw;
       text-align: center;
       h1{
-        font-size: 28px !important;
+        font-size: 4.2vw !important;
       }
       p {
-        font-size: 14px !important;
+        font-size: 2.5vw !important;
       }
     }
     .smartphone {
-      width: 37vh;
+      width: 34vh;
       position: inherit !important;
       align-self: center;
       left: auto;
     }
   }
-}
-
-@media screen and (max-width: 620px) {
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
   .download {
-    flex-direction : column;
-    height: 100%;
-  }
-  .download-android {
-    height: 96px !important;
-    width: 204px !important;
-    .icon-download {
-      height: 72px !important;
-    }
-    .download-txt {
-      h3 {
-        font-size: 22px !important;
-      }
-      p {
-      font-size: 14px !important;
-      }
-    }
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 8vh;
   }
 }
-
-@media screen and (max-width: 400px) {
-  .titre-home {
-    width: 98vw !important;
-    h1{
-      font-size: 16px !important;
-    }
-    p {
-      font-size: 8px !important;
-    }
-  }
-  .download-android {
-    height: 80px !important;
-    width: 188px !important;
-    .icon-download {
-      height: 64px !important;
-    }
-    .download-txt {
-      h3 {
-        font-size: 20px !important;
-      }
-      p {
-      font-size: 12px !important;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 343px) {
-  .titre-home {
-    h1{
-      font-size: 12px !important;
-    }
-    p {
-      font-size: 8px !important;
-    }
-  }
-  .smartphone {
-    width: 27vh !important;
-  }
-  .download-android {
-    height: 64px !important;
-    width: 140px !important;
-    .icon-download {
-      height: 48px !important;
-    }
-    .download-txt {
-      h3 {
-        font-size: 16px !important;
-      }
-      p {
-      font-size: 10px !important;
-      }
-    }
-  }
-}
-
-
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
-  .banniere {
-    height: 100% !important;
-    flex-direction: column-reverse !important;
-    .titre-home {
-      right: auto;
-      position: inherit;
-      width: 85vw;
-      h1{
-        font-size: 4vh !important;
-      }
-      p {
-        font-size: 2vh !important;
-      }
-    }
-    .smartphone {
-      width: 37vh;
-      position: inherit !important;
-      align-self: center;
-      left: auto;
-    }
-  }
-}
-
-
-
