@@ -12,7 +12,9 @@
 
 
   .smartphone {
+
     width: 40vh;
+
     align-self: flex-end;
     position: absolute;
     left: 3vw;
@@ -65,6 +67,7 @@
   a {
     text-decoration: none;
   }
+
   .download-android {
     display: flex;
     align-items: center;
@@ -119,6 +122,7 @@
       }
     }
     .smartphone {
+
       width: 34vh;
       position: inherit !important;
       align-self: center;
@@ -128,8 +132,10 @@
   .carousel-control-next {
     display: none;
   }
+
   .carousel-control-prev {
     display: none;
+
   }
   .download {
     height: auto;
