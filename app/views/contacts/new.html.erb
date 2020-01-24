@@ -1,4 +1,4 @@
-<h1 id="nous-contacter">Contactez nous</h1>
+<h1 id="page_title">Contactez nous</h1>
 
 <div class="skinny_wrapper wrapper_padding">
   <%= form_for @contact do |f| %>
@@ -8,7 +8,7 @@
     <br>
 
     <%= f.label :email %> <br>
-    <%= f.text_field :email, required: true %>
+    <%= f.email_field :email, required: true %>
 
     <br>
 
