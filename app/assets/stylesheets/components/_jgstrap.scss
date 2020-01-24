@@ -1,5 +1,12 @@
 .middle{
   vertical-align: middle;
+  align-items: center;
+
+}
+.box-head-picture{
+  width:5vh;
+  height:5vh;
+  margin-right:2.5vh;
 }
 
 .right-position {
@@ -121,4 +128,11 @@
 .gradient-bottom{
   height: 10vh;
   background: linear-gradient( rgba(240,240,240,1), rgba(254,254,254,1));
+}
+
+.profile-picture{
+  border-radius:50%;
+  background-size: cover;
+  width:20vh;
+  height:20vh;
 }
