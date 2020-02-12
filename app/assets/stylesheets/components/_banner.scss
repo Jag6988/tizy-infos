@@ -3,7 +3,6 @@
   width: 100%;
   height: 55vh;
   background-size: cover;
-  margin: 25px 0 25px 0;
   background-position: center;
   display: flex;
   justify-content: space-around;
@@ -33,7 +32,7 @@
     text-align: center;
     border-radius: 0.5em;
 
-    padding: 32px;
+
     h1 {
       font-weight: bolder;
       color: white;
@@ -72,17 +71,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(0.4turn, rgba(49,49,49,0.5), rgba(49,49,49,1));
+    background: linear-gradient(0.4turn, rgba(80,80,80,1), rgba(0,0,0,1));
 
     border-radius: 0.5em;
     color: white;
     margin: 12px 40px 12px 40px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 5px 5px rgba(255, 255, 255, 0.1);
     padding: 4px;
-    height: 120px;
+    height: 90px;
     width: 240px;
     .icon-download {
       height: 80px;
+    }
+    .fab {
+      font-size: 4em;
     }
     .download-txt {
       display: flex;
@@ -90,10 +92,11 @@
       flex-direction: column;
       justify-content: space-evenly;
       h3 {
-        font-size: 26px;
+        font-size: 1.5em;
       }
       p {
-      font-size: 16px;
+      font-size: 0.8em;
+      margin:0;
       }
     }
   }
@@ -116,10 +119,10 @@
       width: 85vw;
       text-align: center;
       h1{
-        font-size: 32px !important;
+        font-size: 2.8vh!important;
       }
       p {
-        font-size: 24px !important;
+        font-size: 2vh !important;
       }
       a {
         font-size: 16px !important;
@@ -152,10 +155,10 @@
       }
       .download-txt {
         h3 {
-          font-size: 16px;
+          font-size: 1.5em;
         }
         p {
-        font-size: 13px;
+        font-size: 0.8em;
         }
       }
     }
@@ -181,10 +184,10 @@
     .titre-home {
 
       h1{
-        font-size: 24px !important;
+        font-size: 2.8vh!important;
       }
       p {
-        font-size: 16px !important;
+        font-size: 2vh !important;
       }
       a {
         font-size: 8px !important;
@@ -212,14 +215,36 @@
     .titre-home {
 
       h1{
-        font-size: 24px !important;
+        font-size: 2.8vh!important;
       }
       p {
-        font-size: 16px !important;
+        font-size: 2vh !important;
       }
       a {
         font-size: 8px !important;
       }
     }
 
+}
+
+
+.text-block{
+  color: #000;
+  font-style: normal;
+  text-align: center;
+  box-shadow: 10px 5px 5px 7px rgba(250,250,250,1);
+  border-radius:1em;
+  h1{
+    margin-bottom:0;
+  }
+}
+
+
+.relative-div{
+  position:relative;
+}
+
+.ccm{
+  margin: 0 auto;
+  width:85vw;
 }

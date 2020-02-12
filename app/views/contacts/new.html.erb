@@ -1,28 +1,33 @@
-<div class="formulaire-contact">
-  <h3>Contactez nous</h3>
+<div class="banniere" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1874&q=80);">
 
-  <div class="formulaire">
-    <%= form_for @contact do |f| %>
-      <%= f.label :name %> <br>
-      <%= f.text_field :name, required: true %>
+  <div class="formulaire-contact">
+    <h3>Contactez nous</h3>
 
-      <br>
+    <div class="formulaire">
+      <%= form_for @contact do |f| %>
+        <div class = "flexing">
+          <%= f.label :name %> <br>
+          <%= f.text_field :name, required: true %>
 
-      <%= f.label :email %> <br>
-      <%= f.email_field :email, required: true %>
+          <%= f.label :email, class: "ml-1vw" %> <br>
+          <%= f.email_field :email, required: true %>
+        </div>
+        <br>
 
-      <br>
+        <%= f.label :message %> <br>
+        <%= f.text_area :message, as: :text %>
 
-      <%= f.label :message %> <br>
-      <%= f.text_area :message, as: :text %>
+        <div class="hidden">
+          <%= f.label :nickname %> <br>
+         <%= f.text_field :nickname, hint: 'laisser ce champ vide' %>
+        </div>
+        <br>
 
-      <div class="hidden">
-        <%= f.label :nickname %> <br>
-       <%= f.text_field :nickname, hint: 'laisser ce champ vide' %>
-      </div>
-      <br>
-
-      <%= f.submit 'Envoyer', class: "btn btn-danger" %>
-    <% end %>
+        <%= f.submit 'Envoyer', class: "btn btn-danger" %>
+      <% end %>
+    </div>
   </div>
 </div>
+<p> Vous avez des questions, des recommandations, vous souhaitez nous rencontrer ? </p>
+<p> Envoyez-nous un message, nous serons ravi de vous répondre ! </p>
+<p> A bientôt </p>
