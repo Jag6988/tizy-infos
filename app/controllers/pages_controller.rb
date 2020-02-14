@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
   def distributeur
   end
-  def consommateur
+  def offre
   end
   def blog
 

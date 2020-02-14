@@ -11,7 +11,7 @@
           <%= image_tag "bird-light-green.png", class: "litle-bird"%>
           <%= image_tag "bird-green2.png", class: "litle-bird"%>
         </div>
-        <p class = "tag-line-logo">Transparency for a good life</p>
+        <p class = "tag-line-logo">Transparency for good</p>
 
       </div>
     </div>
@@ -30,10 +30,10 @@
       <li class="nav-item active">
         <%= link_to "Accueil", "/", class: "nav-link" %>
       </li>
-      <li class="nav-item dropdown no-display">
-        <%= link_to "Notre offre", "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+      <li class="nav-item active dropdown">
+        <%= link_to "Offre", "/offre", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdown">
-          <%= link_to "Consommateur", "/consommateur", class: "dropdown-item" %>
+          <%= link_to "Notre offre", "/offre", class: "dropdown-item" %>
           <%= link_to "Industriel", "/industriel", class: "dropdown-item" %>
           <%= link_to "Restaurateur", "/restaurateur", class: "dropdown-item" %>
           <%= link_to "Distributeur", "/distributeur", class: "dropdown-item" %>

@@ -27,7 +27,7 @@
     flex-direction: column;
     position: absolute;
     right: 1vw;
-    height: 50vh;
+
     width: 50vw;
     text-align: center;
     border-radius: 0.5em;
@@ -118,14 +118,29 @@
       position: inherit;
       width: 85vw;
       text-align: center;
+      margin-top:5vh;
       h1{
-        font-size: 2.8vh!important;
+        font-size: 3.5vh!important;
       }
       p {
-        font-size: 2vh !important;
+        font-size: 2.5vh !important;
       }
       a {
         font-size: 16px !important;
+      }
+    }
+    .navbar-brand{
+      .main-bird{
+        width:15vw;
+      }
+      .title-logo{
+        font-size:3.5vh !important;
+      }
+      .litle-bird{
+        width:0.5vw;
+      }
+      .tag-line-logo{
+        font-size:1vh !important;
       }
     }
     .smartphone {
@@ -149,7 +164,7 @@
     padding-bottom: 8vh;
     .download-android {
       height: 88px;
-      width: 176px;
+      width: 300px;
       .icon-download {
         height: 66px;
       }
@@ -170,7 +185,7 @@
     flex-direction: column;
       .download-android {
         height: 72px;
-        width: 148px;
+        width: 250px;
         .icon-download {
           height: 56px !important;
         }
@@ -181,8 +196,28 @@
         }
       }
     }
+    .navbar-brand{
+      top:2vh;
+      .main-bird{
+        width:20vw;
+        height:20vw;
+        top:3vh;
+      }
+      strong{
+        font-size:7vh !important;
+      }
+      .title-logo{
+        font-size:5vh !important;
+      }
+      .litle-bird{
+        width:3vw;
+      }
+      .tag-line-logo{
+        font-size:2vh !important;
+      }
+    }
     .titre-home {
-
+      margin-top:5vh;
       h1{
         font-size: 2.8vh!important;
       }
@@ -201,7 +236,7 @@
     flex-direction: column;
       .download-android {
         height: 72px;
-        width: 148px;
+        width: 250px;
         .icon-download {
           height: 56px !important;
         }
@@ -213,6 +248,7 @@
       }
     }
     .titre-home {
+      margin-top:5vh;
 
       h1{
         font-size: 2.8vh!important;

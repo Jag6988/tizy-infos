@@ -6,8 +6,9 @@
     <meta property="og:url"           content="<%= root_path %>" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Tizy" />
-    <meta property="og:description"   content="Consommer durable, c'esT'izy !" />
+    <meta property="og:description"   content="Tizy est un service digital qui évalue avec transparence les impacts environnementaux des produits agroalimentaires." />
     <meta property="og:image"         content="<%= image_path 'smartphone-general.png' %>" />
+    <meta name="keywords" content="transparence produit, impact environnemental, application mobile, tizy, label environnemental, évaluation, environnement" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -19,6 +20,6 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
-
+    <%= render 'shared/footer' %>
   </body>
 </html>
