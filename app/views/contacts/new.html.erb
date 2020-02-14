@@ -1,28 +1,42 @@
-<div class="formulaire-contact">
-  <h3>Contactez nous</h3>
+<div class = "conteneur">
+  <div class="banniere row" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1874&q=80);">
 
-  <div class="formulaire">
-    <%= form_for @contact do |f| %>
-      <%= f.label :name %> <br>
-      <%= f.text_field :name, required: true %>
+    <div class="formulaire-contact col-sm-4 ">
+      <h3>Contactez-nous</h3>
 
-      <br>
+      <div class="formulaire ">
+        <%= form_for @contact do |f| %>
+          <div class = "flexing">
 
-      <%= f.label :email %> <br>
-      <%= f.email_field :email, required: true %>
+            <%= f.text_field :name, required: true, placeholder: "Votre nom...", class: "mr-middle" %>
 
-      <br>
 
-      <%= f.label :message %> <br>
-      <%= f.text_area :message, as: :text %>
+            <%= f.email_field :email, required: true, placeholder: "Votre email..." %>
+          </div>
+          <br>
 
-      <div class="hidden">
-        <%= f.label :nickname %> <br>
-       <%= f.text_field :nickname, hint: 'laisser ce champ vide' %>
+
+          <%= f.text_area :message, as: :text, placeholder: "Votre message..." %>
+
+          <div class="hidden">
+            <%= f.label :nickname %> <br>
+           <%= f.text_field :nickname, hint: 'laisser ce champ vide' %>
+          </div>
+          <br>
+
+          <%= f.submit 'Envoyer', class: "btn btn-danger" %>
+        <% end %>
       </div>
-      <br>
-
-      <%= f.submit 'Envoyer', class: "btn btn-danger" %>
-    <% end %>
+    </div>
   </div>
-</div>
+  <div class = "ccm">
+    <div class = "text-center text-grey">
+      <br>
+      <h1> Vous avez des questions, des recommandations, vous souhaitez nous rencontrer ? </h1>
+      <br>
+      <h1> Envoyez-nous un message, nous serons ravi de vous répondre ! </h1>
+      <br>
+      <h1> A bientôt </h1>
+    </div>
+  </div>
+<br>

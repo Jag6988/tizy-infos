@@ -1,0 +1,41 @@
+.card2{
+
+  border-left: 4px solid rgba(240,240,240,0.8);
+  border-right: 4px solid rgba(240,240,240,0.8);
+  border-bottom: 4px solid rgba(240,240,240,0.8);
+  margin-top:2v;
+  margin-bottom:2vw;
+  border-radius:1em;
+  padding:2vw;
+
+  .circle-around{
+    width:20vh;
+    height: 20vh;
+    margin:0 auto;
+    border-radius: 50%;
+
+  }
+  .circle-inner{
+    width:16vh;
+    height: 16vh;
+    margin:0 auto;
+    border-radius: 50%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top:2vh;
+    .heart{
+      font-size: 10vh;
+
+    }
+  }
+}
+.logo-journaux{
+
+
+}
+
+.card-header2{
+  height:10vh;
+}

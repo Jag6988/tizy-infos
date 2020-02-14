@@ -1,5 +1,5 @@
-<div class = "conteneur"><div>
-  <div class="banniere" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);">
+<div class = "conteneur">
+  <div class="banniere" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1325&q=80);">
     <div id="carouselExampleIndicators" class="smartphone carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,28 +31,140 @@
       </a>
     </div>
     <div class="titre-home">
-      <h1>Faites le meilleur choix pour<strong> notre environnement</strong></h1>
+      <h1>La <strong>Transparence</strong> de vos produits au service de<strong> notre environnement</strong></h1>
       <p>Ensemble, accélérons la <strong> transition écologique</strong> de notre alimentation.</p>
-      <%= link_to "Nous contacter", new_contact_path, class: "btn btn-danger" %>
+      <div class="download">
+        <%= link_to "https://play.google.com/store/apps/details?id=app.tizy.myapplication&hl=fr", target: :_blank do %>
+          <div class = "download-android">
+              <i class="fab fa-google-play"></i>
+              <div class = "download-txt">
+                <p class="disponible"> Disponible sur </p>
+                <h3 class = "download-head"> Google Play </h3>
+              </div>
+          </div>
+        <% end %>
+        <%= link_to "https://www.tizy.app/", target: :_blank do %>
+          <div class = "download-android">
+              <i class="fab fa-apple"></i>
+              <div class = "download-txt">
+                <p class="disponible"> Bientôt sur </p>
+                <h3 class = "download-head"> App store</h3>
+              </div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
-<div class="download">
-  <%= link_to "https://play.google.com/store/apps/details?id=app.tizy.myapplication&hl=fr", target: :_blank do %>
-    <div class = "download-android">
-        <img class = "icon-download" src = "https://img.pngio.com/google-play-store-logo-png-transparent-svg-vector-freebie-supply-google-play-store-logo-png-2400_2746.png">
-        <div class = "download-txt">
-          <p class="disponible"> Disponible sur </p>
-          <h3 class = "download-head"> Google Play </h3>
+  <br>
+
+  <div class = "ccm">
+    <div class = "text-block">
+      <h1 class ="gb br-small p-small fc-white">Comment ça marche ?</h1>
+      <br>
+      <div class ="flexing row sa">
+        <div class = "card2 text-size col-sm-3">
+          <div class ="card-header2">
+            <h1 class ="fc-dark-grey">1. <strong>Mesurez</strong> l'impact environnemental de vos produits.</h1>
+          </div>
+
+          <div class = "circle-around gb">
+            <div class = "circle-inner wb">
+              <i class="heart fc-orange fas fa-weight"></i>
+            </div>
+          </div>
+          <br>
+          <p class ="fc-medium-grey">Avec notre outil, nous analysons le packaging, les origines et les émissions de CO2 de vos produits.</p>
         </div>
-    </div>
-  <% end %>
-  <%= link_to "https://www.tizy.app/", target: :_blank do %>
-    <div class = "download-android">
-        <img class = "icon-download" src = "https://www.stickpng.com/assets/images/58e383a9204d556bbd97b149.png">
-        <div class = "download-txt">
-          <p class="disponible"> Bientôt sur </p>
-          <h3 class = "download-head"> App store</h3>
+        <div class = "card2 text-size col-sm-3">
+          <div class ="card-header2">
+            <h1 class ="fc-dark-grey">2. <strong>Affichez</strong> le résultat directement sur vos produits.</h1>
+          </div>
+          <div class = "circle-around gb">
+            <div class = "circle-inner wb">
+              <i class="heart fc-orange fas fa-qrcode"></i>
+            </div>
+          </div>
+          <br>
+          <p class ="fc-medium-grey">A l'aide d'une estampille phygitale, le résultat est visible et mise en valeur par Tizy auprès des consommateurs.</p>
         </div>
+        <div class = "card2 text-size col-sm-3">
+          <div class ="card-header2">
+            <h1 class ="fc-dark-grey">3. <strong>Offrez</strong> une information transparente et phygitale à vos clients.</h1>
+          </div>
+          <div class = "circle-around gb">
+            <div class = "circle-inner wb">
+              <i class="heart fc-orange fas fa-mobile-alt"></i>
+            </div>
+          </div>
+          <br>
+          <p class ="fc-medium-grey">A l'aide du QRcode un consommateur accède au résultat sans avoir besoin de télécharger d'application.</p>
+        </div>
+      </div>
+      <%= link_to "En savoir plus", "/offre", class: "btn-tizy fc-white gb" %>
+      <br>
+      <br>
     </div>
-  <% end %>
-</div>
+    <br>
+    <div class = "text-block">
+      <h1 class ="ob br-small p-small fc-white">Pourquoi ciblons-nous l'alimentation ?</h1>
+      <br>
+      <div class ="flexing row sa">
+        <div class = "card2 text-size col-sm-3">
+          <div class ="card-header2">
+            <h1 class ="fc-dark-grey">1. <strong>32% de nos émissions de CO2 </strong> proviennent de notre alimentation.</h1>
+          </div>
+
+          <div class = "circle-around ob">
+            <div class = "circle-inner wb">
+              <i class="heart fc-green fas fa-burn"></i>
+            </div>
+          </div>
+          <br>
+          <p class ="fc-medium-grey">Notre alimentation est un facteur polluant important, heuresement il éxiste plein de solutions pour réduire notre empreinte alimentaire sur la planète !</p>
+        </div>
+        <div class = "card2 text-size col-sm-3">
+          <div class ="card-header2">
+            <h1 class ="fc-dark-grey">2. C'est un besoin <strong>quotidien</strong> auquel nous sommes tous confrontés.</h1>
+          </div>
+          <div class = "circle-around ob">
+            <div class = "circle-inner wb">
+              <i class="heart fc-green fas fa-utensils"></i>
+            </div>
+          </div>
+          <br>
+          <p class ="fc-medium-grey">2-3 fois par jours nous mangeons. Adopter des gestes dans notre quotidien est une excellente manière d'intégrer pleinenement des comportements éco-responsables.</p>
+        </div>
+        <div class = "card2 text-size col-sm-3">
+          <div class ="card-header2">
+            <h1 class ="fc-dark-grey">3. Le repas est un moment de <strong>partage et de transmission</strong> fort.</h1>
+          </div>
+          <div class = "circle-around ob">
+            <div class = "circle-inner wb">
+              <i class="heart fc-green fas fa-share-alt"></i>
+            </div>
+          </div>
+          <br>
+          <p class ="fc-medium-grey">Autour de la table nous partageons, discutons, transmetont des valeurs riches propices à la diffusion d'une pédagogie environnementale. </p>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class = "text-block">
+      <br>
+      <br>
+      <h1>Ils nous suivent:</h1>
+      <br>
+      <div class = "flexing center row">
+        <img class = "logo-journaux col-sm-1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logo_Journal_Progr%C3%A8s.svg/1280px-Logo_Journal_Progr%C3%A8s.svg.png">
+        <img class = "logo-journaux col-sm-1" src= "https://upload.wikimedia.org/wikipedia/fr/7/7f/RCF_Radio_logo_2015.png">
+        <img class = "logo-journaux col-sm-1" src="https://lh3.googleusercontent.com/proxy/No3VVJ-N_4Zu7BmAaoWUqujyTqKYcX673j-slfuMf8BJP4s9_ubTxp-ggMMwXeFNvBrvnIO0Km3ToOQyyOvo7L0EASYbvtrn9oM-FDJVGOvkjQbewNdaVrhYbVoSbemFOhRyjQr_v-OUOUsydS3sV0_rnQ">
+        <img class = "logo-journaux col-sm-1" src= "https://www.ladn.eu/wp-content/uploads/2019/03/wagon-executive.jpg">
+        <img class = "logo-journaux col-sm-1" src= "https://www.auvergnerhonealpes.fr/cms_viewFile.php?idtf=1406&path=logo-partenaire-2017-rvb-pastille-bleue-png.png">
+        <img class = "logo-journaux col-sm-1" src= "https://www.jaimelesstartups.fr/wp-content/uploads/2018/02/LSULOGO.jpg">
+      </div>
+      <br>
+    </div>
+  </div>
+<br>
+

@@ -31,3 +31,135 @@ a {
 .hidden {
   display: none;
 }
+
+.conteneur{
+  height:80vh;
+  position:relative;
+  top:15vh;
+
+}
+.center{
+  width:100%;
+  justify-content:center;
+}
+.text-center{
+  text-align: center;
+}
+.text-grey{
+  color:rgba(130,130,130,1);
+}
+
+.center-div{
+  margin:0 auto;
+}
+
+.text-size{
+    h1{
+    font-size: 1.5em;
+    text-align:center;
+
+  }
+  p{
+    font-size: 1.2em;
+    text-align:center;
+
+  }
+}
+ .sb{
+  justify-content: space-between;
+ }
+.sa{
+  justify-content: space-around;
+ }
+.gb{
+  background-color: rgba(18, 147, 117, 1);
+}
+.ob{
+  background-color: rgba(216, 97, 25, 1);
+}
+.wb{
+  background-color: white;
+}
+.br-small{
+  border-radius:0.5em 0.5em 0 0;
+}
+.p-small{
+  padding:1vh;
+}
+.fc-white{
+  color:white;
+}
+.fc-light-grey{
+  color:rgba(220,220,220,1);
+}
+.fc-medium-grey{
+  color:rgba(150,150,150,1);
+}
+.fc-dark-grey{
+  color:rgba(50,50,50,1);
+}
+.fc-green{
+  color:rgba(18, 147, 117, 1);
+}
+.fc-orange{
+  color:rgba(216, 97, 25, 1);
+}
+
+.fs-large{
+  font-size:10vh;
+}
+
+.btn-tizy{
+  padding:10px;
+  font-size:24px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(230,230,230,1);
+
+}
+  .btn-tizy:hover{
+    color:white;
+    padding:14px;
+    opacity:0.8;
+    text-decoration: none;
+  }
+
+.h-large{
+  height:10vh;
+}
+
+.vertical{
+  align-items: center;
+}
+.no-margin{
+  margin:0;
+}
+
+.w-middle{
+  width:10vh;
+}
+
+.p-middle{
+  padding:2vh;
+}
+.italic{
+  font-style:italic;
+}
+
+.right{
+  position:relative;
+  left:20vw;
+}
+
+.mr-middle{
+  margin-right:2vw;
+}
+
+.bottom{
+  position:absolute;
+  bottom:0;
+  height:10vh;
+  width:80%;
+}
+.middle{
+  margin:0 auto;
+}
