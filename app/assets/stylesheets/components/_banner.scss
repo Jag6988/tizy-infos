@@ -107,9 +107,23 @@
 }
 
 // responsive!!!
-
+.main-logo{
+  width:250px;
+  }
 
 @media only screen and (max-width: 1024px) {
+  .main-logo{
+  width:200px;
+  }
+  h1{
+        font-size: 3vh!important;
+      }
+      p {
+        font-size: 2.5vh !important;
+      }
+      a {
+        font-size: 2.5vh !important;
+      }
   .banniere {
     height: auto !important;
     flex-direction: column-reverse !important;
@@ -119,15 +133,7 @@
       width: 85vw;
       text-align: center;
       margin-top:5vh;
-      h1{
-        font-size: 3.5vh!important;
-      }
-      p {
-        font-size: 2.5vh !important;
-      }
-      a {
-        font-size: 16px !important;
-      }
+
     }
     .navbar-brand{
       .main-bird{
@@ -181,6 +187,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .main-logo{
+      width:180px;
+    }
+
+     h1{
+        font-size: 2.8vh!important;
+      }
+      p {
+        font-size: 2vh !important;
+      }
+      a {
+        font-size: 2vh !important;
+      }
     .download {
     flex-direction: column;
       .download-android {
@@ -218,20 +237,25 @@
     }
     .titre-home {
       margin-top:5vh;
-      h1{
+
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .main-logo{
+    width:180px;
+  }
+
+   h1{
         font-size: 2.8vh!important;
       }
       p {
         font-size: 2vh !important;
       }
       a {
-        font-size: 8px !important;
+        font-size: 2vh !important;
       }
-    }
-
-}
-
-@media only screen and (max-width: 400px) {
     .download {
     flex-direction: column;
       .download-android {
@@ -250,15 +274,7 @@
     .titre-home {
       margin-top:5vh;
 
-      h1{
-        font-size: 2.8vh!important;
-      }
-      p {
-        font-size: 2vh !important;
-      }
-      a {
-        font-size: 8px !important;
-      }
+
     }
 
 }
