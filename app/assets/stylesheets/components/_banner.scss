@@ -109,11 +109,19 @@
 // responsive!!!
 .main-logo{
   width:250px;
+  height:130px;
   }
 
+@media only screen and (max-width: 1900px) {
+  .main-logo{
+  width:230px;
+  height:115px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .main-logo{
   width:200px;
+  height:100px;
   }
   h1{
         font-size: 3vh!important;
@@ -189,6 +197,7 @@
 @media only screen and (max-width: 600px) {
     .main-logo{
       width:180px;
+      height:90px;
     }
 
      h1{
@@ -245,6 +254,7 @@
 @media only screen and (max-width: 400px) {
     .main-logo{
     width:180px;
+    height:90px;
   }
 
    h1{
