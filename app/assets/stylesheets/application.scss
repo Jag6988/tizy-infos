@@ -77,8 +77,14 @@ a {
 .ob{
   background-color: rgba(216, 97, 25, 1);
 }
+.yb{
+  background-color: rgba(199, 138, 37, 1);
+}
 .wb{
   background-color: white;
+}
+.blab{
+  background-color: black;
 }
 .br-small{
   border-radius:0.5em 0.5em 0 0;
@@ -88,6 +94,9 @@ a {
 }
 .fc-white{
   color:white;
+}
+.fc-yellow{
+  color:rgba(199, 138, 37, 1);
 }
 .fc-light-grey{
   color:rgba(220,220,220,1);
@@ -169,4 +178,17 @@ a {
 }
 .ol{
   opacity:0.8;
+}
+.os{
+  opacity:0.2;
+}
+.om{
+  opacity:0.5;
+}
+.of{
+  opacity:1;
+}
+
+.product{
+  width:100%;
 }
