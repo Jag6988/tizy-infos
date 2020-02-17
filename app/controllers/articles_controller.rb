@@ -1,8 +1,16 @@
 class ArticlesController < ApplicationController
   def new
+    @article = Article.new
   end
 
   def create
+      @article = Article.create(
+        title: params[:article][:title],
+        picture: params[:article][:picture],
+        resume: params[:article][:resume],
+        content: params[:article][:content],
+        source: params[:article][:source],
+      )
   end
 
   def update

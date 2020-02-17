@@ -1,10 +1,23 @@
-<div class = "gradient-top"><p>.</p><div>
-<div class="banner" style="background-size: cover; background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)), url(<%=@article.picture%>);">
+<div class = "conteneur">
+  <div class="banniere" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(<%=@article.picture%>);">
+    <div class="titre-home">
+      <h1><%=@article.title%></h1>
+      <p><%=@article.resume%></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class = "container">
+  <% @article.content.split("<br>").each do |p| %>
+    <p><%=p%></p>
+  <%end%>
+  <div class = "footer-date flexing sb">
+    <p><%=@article.author%></p>
+    <p><%=@article.created_at%></p>
+
+  </div>
 </div>
-<div class = "gradient-bottom"><p>.</p><div>
-<div class = "container">
-  <h1 ><%=@article.title%></h1>
-  <h4><strong><%=@article.resume%></strong></h4>
-  <p><%=@article.content%></p>
-</div>
+
+
+
 

@@ -3,6 +3,7 @@
 @import "font-awesome";
 @import "components/index";
 @import "contacts";
+@import "articles";
 
 
 .box {
@@ -194,4 +195,36 @@ a {
 
 .product{
   width:100%;
+}
+
+.w-50{
+  width:50%;
+}
+
+.h-20{
+  height:20vh;
+}
+.h-30{
+  height:30vh;
+}
+
+.h-80{
+  height:80%;
+}
+
+.w-20{
+  width:20%;
+}
+
+.w-100{
+  width:100%;
+}
+
+.no-text-d {
+  a:link {
+    text-decoration: none;
+  }
+}
+.text-left{
+  text-align:left;
 }

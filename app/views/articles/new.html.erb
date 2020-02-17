@@ -1,2 +1,35 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+
+<div class = "conteneur">
+  <div class = "ccm w-50">
+    <h1>Ajouter un nouvel article</h1>
+    <%= simple_form_for(Article.new) do |f| %>
+      <form>
+      <div class="form-group">
+        <div class="">
+          <%= f.input :title %>
+        </div>
+        <div class="">
+          <%= f.input :picture  %>
+        </div>
+        <div class="h-20">
+          <%= f.input :resume, :as => :text%>
+        </div>
+        <div class="h-30">
+          <%= f.input :content, :as => :text %>
+        </div>
+        <div class="">
+          <%= f.input :source %>
+        </div>
+        <div class="">
+          <%= f.input :author %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit %>
+        </div>
+      </div>
+    </form>
+    <% end %>
+  </div>
+
+

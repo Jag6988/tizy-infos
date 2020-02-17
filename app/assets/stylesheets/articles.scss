@@ -1,3 +1,19 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.new_article{
+  .input {
+    margin:2vh;
+  }
+  label{
+    width:20vh;
+  }
+  input {
+    width:100%;
+
+  }
+  textarea{
+    width:100%;
+
+  }
+}

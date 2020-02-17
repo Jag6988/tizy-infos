@@ -1,33 +1,25 @@
-  <div class = "gradient-top"><p>.</p><div>
-<div class="banner" style="background-size: cover; background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)), url(https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExNjMwfQ&auto=format&fit=crop&w=1350&q=80);">
-  <div class="container box-header-banner black-background right-position">
-    <h1 >Tizy vous propose des <strong>articles</strong> en lien avec <strong> la transition écologique.</strong></h1>
-    <br>
-    <!-- <p>Nous permettons de <strong> mesurer et promouvoir</strong> votre menu à vos clients.</p> -->
-    <a class="btn btn-danger" href="#">Proposer un article</a>
+ <div class = "conteneur">
+  <div class="banniere" style="background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=80);">
+    <div class="titre-home">
+      <h1>La revue de presse de Tizy</h1>
+
+    </div>
   </div>
-</div>
-<div class = "gradient-bottom"><p>.</p><div>
-
-
-<div class = "container">
-  <% i = 0 %>
-  <%@articles.each do |art| %>
-    <%= link_to article_path(art)  do%>
-      <%if i.even? %>
-        <div class = "box white-back">
-      <%else%>
-        <div class = "box grey-back">
-      <%end%>
-        <div class="card-product">
-          <img src= <%= art.picture %>>
-          <div class="card-product-infos">
-            <h2><%=art.title%></h2>
-            <p><%= art.resume%></p>
-          </div>
+  <br>
+  <br>
+  <div class = "ccm">
+    <div class ="flexing row sa ">
+      <%@articles.each do |art| %>
+        <div class = "card2 text-size col-sm-3 ">
+          <%= link_to article_path(art), { :class=>"no-text-d " }   do%>
+            <img class = "w-100" src= <%= art.picture %> >
+            <h2 class = "fc-dark-grey"><%=art.title%></h2>
+              <p class = "fc-medium-grey text-left"><%= art.resume%></p>
+            <img class = "w-20" src= <%= art.source %> >
+          <%end%>
         </div>
-      </div>
-    <%end%>
-    <%i += 1%>
-  <%end%>
+      <%end%>
+    </div>
+
 </div>
+
