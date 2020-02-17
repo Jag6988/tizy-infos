@@ -12,7 +12,7 @@
       <%@articles.each do |art| %>
         <div class = "card2 text-size col-sm-3 ">
           <%= link_to article_path(art), { :class=>"no-text-d " }   do%>
-            <img class = "w-100" src= <%= art.picture %> >
+            <img class = "w-100 h-15" src= <%= art.picture %> >
             <h2 class = "fc-dark-grey"><%=art.title%></h2>
               <p class = "fc-medium-grey text-left"><%= art.resume%></p>
             <img class = "w-20" src= <%= art.source %> >
