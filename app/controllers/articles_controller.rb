@@ -10,6 +10,7 @@ class ArticlesController < ApplicationController
         resume: params[:article][:resume],
         content: params[:article][:content],
         source: params[:article][:source],
+        author: params[:article][:author],
       )
   end
 
